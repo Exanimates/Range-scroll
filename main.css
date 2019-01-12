@@ -16,10 +16,11 @@ body, html {
 
 .target-indicator {
 	width: 351px;
-	height: 151px;
+	height: 168px;
 	background-color: #f3f3f3;
 	border: 0.5px solid #666666;
 	border-radius: 6px;
+	box-shadow: 0px 0px 30px #c2c2c2;
 }
 
 .target-indicator__body {
@@ -35,7 +36,7 @@ body, html {
 	color: #fffcff;
 }
 
-.target-indicator__body__reached{
+.target-indicator__body__reached {
 	height: 100%;
 	background: #ffffff;
 }
@@ -45,7 +46,8 @@ body, html {
 	padding: 15px;
 }
 
-.target-indicator__body__reached {
+.reached {
+	background: #ffffff;
 	height: 88%;
 	border: 0.5px solid #dcdcdc;
 	border-radius: 6px;
@@ -55,6 +57,49 @@ body, html {
 	display: flex;
 }
 
-.target-indicator__body__reached_target {
+.reached_target {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 60%;
 }
+
+.reached_target__title {
+	margin-right: 10px;
+}
+
+.reached_need {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40%;
+}
+
+.target {
+	display: grid;
+	border: 0.5px solid #dbdbdb;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	height: 81%;
+	width: 16%;
+	background-color: #8a8889;
+	color: #ffffff;
+}
+
+.target__value {
+	text-align: center;
+}
+
+.target__title{
+	border-bottom: 1.5px solid #868485;
+	box-shadow: 0 1.5px 0 #9a9899;
+}
+
+.reached_need__icon{
+	height: 21px;
+}
+
+/* .target__value{
+	border-top: 2px inset #9c9a9b;
+} */
