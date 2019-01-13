@@ -4,16 +4,16 @@ var needMoney = document.getElementsByClassName("need_money_value")[0];
 
 
 for (input of document.querySelectorAll("input[type=range]")) {
-	actualizarInput(input)
+	actualizeInput(input)
 }
 
 
 document.addEventListener("input", function (evt) {
 	var input = evt.target;
-	actualizarInput(input)
+	actualizeInput(input)
 });
 
-function actualizarInput(input) {
+function actualizeInput(input) {
 	var inputMin = input.getAttribute("min");
 	var inputMax = input.getAttribute("max");
 
