@@ -21,7 +21,7 @@ function actualizeInput(input) {
 
 	newPoint = ($(input).val() - $(input).attr("min")) / ($(input).attr("max") - $(input).attr("min"));
 
-	offset = -182;
+	offset = -184;
 
 	if (newPoint < 0) { newPlace = 0; }
 	else if (newPoint > 1) { newPlace = width; }
