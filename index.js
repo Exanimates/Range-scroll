@@ -34,6 +34,6 @@ function actualizeInput(input) {
 		.text("$" + $(input).val());
 
 	needMoney.innerHTML = targetValue.innerHTML - input.value;
-	var unidad = (inputMax - inputMin) / 100;
-	input.style.setProperty("--value", (input.value - inputMin) / unidad);
+	var gradientValue = (inputMax - inputMin) / 100;
+	input.style.setProperty("--value", (input.value - inputMin) / gradientValue);
 }
