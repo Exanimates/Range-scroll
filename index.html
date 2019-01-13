@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="container">
-			<div class="target-indicator">
+			<form class="target-indicator">
 				<div class="target-indicator__header">
 					<span class="target-indicator__header__title">Target Indicator Demo</span>
 				</div>
@@ -17,21 +17,24 @@
 					<div class="reached">
 						<div class="reached_target">
 							<span class="reached_target__title">Reached:</span> 
-							<input type="range" class="reached_target__input"/>
+							<input type="range" min="0" max="15" step="1" value="1" name="target">
 							<div class="target">
 								<span class="target__title">Target</span>
-								<span class="target__value">$15</span>
+								<span class="target__value">$<span class="target__value_number">15</span></span>
 							</div>
+							<span class="output_value">2</span>
 						</div>
 						<div class="reached_need">
 							<img class="reached_need__icon" src="./icons/icons8-info.svg">
-							You need $1 more to reach your target
+							<span class="need_money_text">You need $<span class="need_money_value">1</span> more to reach your target</span>
 						</div>
+						
 					</div>
 					
 				</div>
-			</div>
+			</form>
 	</div>
+	<script src="jquery-3.3.1.min.js"></script>
 	<script src="index.js"></script>
 </body>
 </html>

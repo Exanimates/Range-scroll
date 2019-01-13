@@ -14,6 +14,19 @@ body, html {
 	height: 100%;
 }
 
+.output_value { 
+  position: relative;
+  text-align: center; 
+  color: #5c656e; 
+  border-radius: 10px; 
+  display: inline-block; 
+	bottom: -30%;
+	font-size: 12px;
+	margin-top: 18px;
+  left: -120px;
+  margin-left: -0.7%;
+}
+
 .target-indicator {
 	width: 351px;
 	height: 168px;
@@ -66,6 +79,7 @@ body, html {
 
 .reached_target__title {
 	margin-right: 10px;
+	color: #525053;
 }
 
 .reached_need {
@@ -81,7 +95,7 @@ body, html {
 	border-radius: 5px;
 	align-items: center;
 	justify-content: center;
-	height: 81%;
+	height: 70%;
 	width: 16%;
 	background-color: #8a8889;
 	color: #ffffff;
@@ -91,16 +105,84 @@ body, html {
 	text-align: center;
 }
 
-.target__title{
+.target__title {
 	border-bottom: 1.5px solid #868485;
 	box-shadow: 0 1.5px 0 #9a9899;
 }
 
-.reached_need__icon{
+.reached_need__icon {
 	height: 21px;
 	margin-right: 8px;
 }
 
-/* .target__value{
-	border-top: 2px inset #9c9a9b;
-} */
+.need_money_text {
+	color: #606060;
+}
+
+input[type=range] {
+	width: 10em;
+	display: inline-block;
+}
+
+input[type='range']:focus {
+	outline: none;
+}
+
+input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	background-color: transparent;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #626264;
+	cursor: pointer;
+	margin-top: 6px;
+}
+
+input[type=range]::-moz-range-thumb {
+	background-color: transparent;
+	width: 0;
+	height: 0;
+	cursor: pointer;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #626264;
+}
+
+input[type=range]::-ms-thumb {
+	background-color: transparent;
+	width: 0;
+	height: 0;
+	cursor: pointer;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #626264;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	height: 7px;
+	border: 1px solid #cfcfcf;
+	background: linear-gradient(to right, #0e82cf calc(var(--value)*1%), #d0d0d0 0);
+}
+
+input[type=range]::-moz-range-track {
+	height: 7px;
+	background: linear-gradient(to right, #0e82cf calc(var(--value)*1%), #d0d0d0 0);
+}
+
+input[type=range]::-ms-track {
+	background-color: #777;
+	height: 3px;
+}
+
+input[type=range]::-ms-fill-lower {
+	background-color: #0e82cf
+}
+
+input[type=range]::-ms-fill-upper {
+	background-color: black;
+}
